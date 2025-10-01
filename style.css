@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 * {
     margin: 0;
@@ -481,3 +479,131 @@ form .btn2 {
 .copyright i {
     color: #ff004f;
 }
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .header-text {
+    margin-left: 100px;
+    font-size: 24px;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+  }
+
+  nav ul li {
+    margin: 10px 10px;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-col-2 {
+    text-align: center;
+  }
+
+  .services-list,
+  .work-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin: 10px 0 0 20px;
+  }
+
+  .header-text {
+    margin: 60px auto;
+    text-align: center;
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .Sub-Title {
+    font-size: 40px;
+  }
+
+  .tab-titles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-links {
+    margin: 10px 0;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .contact-right form {
+    margin-top: 20px;
+  }
+}
+
+/* Very small screens (phones < 480px) */
+@media (max-width: 480px) {
+  #logo {
+    font-size: 32px;
+    margin-left: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .header-text {
+    font-size: 18px;
+  }
+
+  .header-text h1 {
+    font-size: 26px;
+  }
+
+  .Sub-Title {
+    font-size: 28px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 16px;
+  }
+
+  .btn,
+  .btn.btn2 {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+  }
+}
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ac6cf96ebf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- ================= INTRO OVERLAY ================= -->
+  <div class="intro-overlay">
+    <div class="shard shard1"></div>
+    <div class="shard shard2"></div>
+    <div class="shard shard3"></div>
+    <h2 class="intro-text">
+      Are you ready to dive into the world of <span>Automation</span> and <span>AI?</span>
+    </h2>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <div id="logo"><span>R</span>ao.</div>
+        <ul class="nav">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#potfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Mechanical Engineer / Web Developer</p>
+        <h1>Hi, I'm <span>Rao Talha Afzal</span><br>From Pakistan</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="potfolioimages/user1.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="Sub-Title">About Me</h1>
+          <p>
+            I'm Rao Talha Afzal a <span>Mechanical Engineer</span> turned Digital Creator, where precision meets
+            imagination. With a strong foundation in engineering, I bring analytical thinking and problem-solving to the
+            forefront of every project. Beyond the world of machines and mechanics, I specialize in <span>web
+              development</span> , <span>graphic design</span>, and <span>digital marketing</span>, creating seamless
+            digital experiences that are as functional as they are visually compelling. Whether I’m engineering
+            efficient solutions, building user-friendly websites, designing impactful visuals, or crafting data-driven
+            marketing strategies, I’m driven by one goal which is to bridge the gap between <span>technology and
+              creativity.</span> Let’s collaborate and bring your vision to life with purpose, precision, and
+            personality.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <!-- Skills -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Solid Works</span><br>2D/3D Designing</li>
+              <li><span>Graphic Design</span><br>Visual Branding & Creative Assets
+              </li>
+              <li><span>Web Development</span><br>Building Respnsive Websites</li>
+            </ul>
+          </div>
+
+          <!-- Experience -->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024-Current</span><br>Graphic Designer at Pixenix Marketing Automation Agency</li>
+<li><span>2023 - 2024</span><br>Visiting Teacher at Hamza Pre Cadet Academy</li>
+              <li><span>2022-2024</span><br>Web Developer at Elysium Services
+Company</li>
+              
+              
+            </ul>
+          </div>
+
+          <!-- Education -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2024 - Current</span><br>BE Mechanical Engineering From NUST</li>
+              <li><span>2022 - 2024</span><br>FSC from APS Pasban Rawalpindi</li>
+              <li><span>2020 - 2022</span><br>Matric from APS Pasban Rawalpindi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SERVICES ================= -->
+  <div id="services">
+    <div class="container">
+      <h1 class="Sub-Title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <h4>Responsive. Fast. User-Focused.</h4>
+          <p>
+            I build modern, interactive websites that deliver seamless user experiences across all devices. From landing
+            pages to full-scale websites, I prioritize clean code, intuitive design, and performance optimization to
+            help brands stand out online.
+          <h3>Key Offerings:</h3>
+          <ul>
+            <li>Front-end development (HTML, CSS, JavaScript).</li>
+            <li>Responsive and mobile-first design.</li>
+            <li>UI/UX-focused layouts.</li>
+            <li>Portfolio, business, and product websites.</li>
+            <li>Website performance and SEO optimization.</li>
+          </ul>
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Solid Work Designing</h2>
+          <h4>From Sketch to Reality.</h4>
+          <p>
+            With a strong mechanical engineering background, I design accurate 2D and 3D CAD models tailored to your
+            project requirements. Whether it is technical schematics or detailed product models, I ensure precision,
+            clarity, and manufacturability.
+          <h3>Key Offerings:</h3>
+          <ul>
+            <li>2D drafting for technical documentation.</li>
+            <li>3D modeling for manufacturing or visualization.</li>
+            <li>Sheet metal and part design.</li>
+            <li>Assembly and exploded views.</li>
+            <li>DXF/DWG file creation for CNC/laser cutting.</li>
+          </ul>
+          </p>
+
+
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>Graphic Design → Visual Branding & Creative Assets</h2>
+          <h4>Turning Ideas into Impactful Visuals.</h4>
+          <p> 
+            I specialize in creating cohesive visual branding and versatile design assets that elevate your identity
+            across platforms. From logos and brand kits to promotional graphics, I ensure every design is both
+            strategically aligned and visually compelling.
+            <h3>Key Offerings:</h3>
+            <ul>
+              <li>Logo and brand identity design.</li>
+              <li>Social media content and ad creatives.</li>
+              <li>Flyers, posters, and print materials.</li>
+              <li>Business cards and brand stationery.</li>
+              <li>Web banners and digital visuals.</li>
+            </ul>  
+          </p> 
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <div id="potfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="potfolioimages/user0.jpg">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ex.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="potfolioimages/user0.jpg">
+          <div class="layer">
+            <h3>4-Stoke Engine</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ex.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="potfolioimages/user0.jpg">
+          <div class="layer">
+            <h3>Escape Mechanism</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ex.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ================= CONTACT ================= -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> r.talhaafzal@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +923333864299</p>
+          <div class="social-icons">
+            <a target="_blank" href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/raotalhaafzal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="potfolioimages/Report on Solid Work.docx" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; Rao. Made with <i class="fa-solid fa-heart"></i> by RAO TALHA AFZAL</p>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    // Trigger intro sequence
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        document.body.classList.add("intro-complete");
+      }, 500);
+    });
+  </script>
+
+</body>
+
+</html>

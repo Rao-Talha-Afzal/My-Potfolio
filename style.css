@@ -344,7 +344,9 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* -------------------services----------------- */
 #services {
   padding: 30px 0;
@@ -489,6 +491,7 @@ nav ul li a:hover::after {
 }
 
 /* ----------------------contact---------------- */
+
 .contact-left {
   flex-basis: 35%
 }
@@ -720,4 +723,76 @@ form .btn2 {
   .social-icons a {
     font-size: 24px;
   }
+}
+
+
+
+/* ================= SERVICES ================= */
+#services{
+    background: linear-gradient(
+        to bottom,
+        #080808 0%,
+        #0b0b0b 25%,
+        #0f2027 70%,
+        #203a43 100%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+/* ================= PORTFOLIO ================= */
+#portfolio,
+#potfolio{
+    background: linear-gradient(
+        to bottom,
+        #203a43 0%,
+        #203a43 100%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+/* ================= CONTACT ================= */
+#contact{
+    background: linear-gradient(
+        to bottom,
+        #203a43 0%,
+        #2c5364 100%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+/* ================= PINK + CYAN GLOW ================= */
+#services::before,
+#portfolio::before,
+#potfolio::before,
+#contact::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(255,0,100,0.12),
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(0,200,255,0.10),
+            transparent 45%
+        );
+
+    z-index: 0;
+}
+
+/* Keep content above glow */
+#services > *,
+#portfolio > *,
+#potfolio > *,
+#contact > *{
+    position: relative;
+    z-index: 1;
 }

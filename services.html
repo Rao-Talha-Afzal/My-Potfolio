@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  /* ===============================
+   PAGE BACKGROUND
+   =============================== */
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #080808 0%,
+        #0f2027 45%,
+        #203a43 100%
+    );
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ===============================
+   PINK + CYAN GLOW EFFECT
+   =============================== */
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(255, 0, 100, 0.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(0, 200, 255, 0.10),
+            transparent 40%
+        );
+}
+
+/* ===============================
+   OPTIONAL GLASS EFFECT SECTIONS
+   =============================== */
+
+.section,
+.container-box,
+.card{
+    background: rgba(20,20,20,0.55);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 15px;
+}
+</style>
+<body>
+  <nav>
+  <div id="logo"><span>R</span>ao.</div>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Service</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+        <h1>My Services</h1>
+
+
+  <section id="web-design">
+    <h2>Web Designing</h2>
+    <p>All web design details...
+      Ever wonder to get a website that beocome the backbone of your business.
+    </p>
+</section>
+
+<section id="solidworks">
+    <h2>SolidWorks Designing</h2>
+    <p>All SolidWorks details...</p>
+</section>
+
+<section id="graphic-design">
+    <h2>Graphic Designing</h2>
+    <p>All Graphic Design details...</p>
+</section>
+<a href="index.html" class="btn">← Back to Home</a>
+</body>
+</html>
